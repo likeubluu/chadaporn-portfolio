@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chadaporn-Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="app.js"></script>
+
+    <link rel="shortcut icon" href="images/icons.png" type="images/x-icon">
+
+</head>
+
+<body>
+    <div class="all-components">
+        <header>
+            <div class="head-box">
+                <h1>Chadaporn</h1>
+            </div>
+            <div>
+                <nav class="navbar navbar-expand">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" id="nav-link" href="#home"> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" id="nav-link" href="#home"> <ion-icon name="home-outline"></ion-icon></a></li>
+                        <li class="nav-item"><a class="nav-link" id="nav-link" href="#about"> About</a></li>
+                        <li class="nav-item"><a class="nav-link" id="nav-link" href="#about"> <ion-icon name="help-circle-outline"></ion-icon></a></li>
+                        <li class="nav-item"><a class="nav-link" id="nav-link" href="#project">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" id="nav-link" href="#project"><ion-icon name="code-download-outline"></ion-icon></a></li>
+                        <li class="nav-item"><a class="nav-link" id="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" id="nav-link" href="#contact"><ion-icon name="call-outline"></ion-icon></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="home">
+            <div class="home-box1">
+                <h1><span id="span-1">Hello,</span></h1>
+                <h1>I'm Chadaporn</h1>
+                <div class="d-flex flex-row">
+                    <p> Born to be Frontend Developer </p>
+                    <span id="span-2"> <ion-icon name="code-slash"></ion-icon> </span>
+                </div>
+
+                <a href="https://github.com/likeubluu" target="_blank">
+                    <button class="d-flex justify-content-center align-items-center">
+                        <ion-icon class="icon" name="logo-github"></ion-icon>
+                        <h3>Open Github</h3>
+                    </button>
+                </a>
+            </div>
+            <div class="home-box2">
+                <div id="img">
+                    <img src="images/pf.jpg" alt="profile">
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <article id="about-article-1">
+                <div class="article-1-box">
+                    <h1>About</h1>
+                    <p>Hello, I'm Chadaporn Silasawun ( Tong ), 21 years old,
+                        currently studying in the 3rd year of the Faculty of Information Technology.
+                        Computer Engineering Sripatum University, interested in the career of Front-End Developer.</p>
+                    <a href="#">
+                        <div class="article-1-box-bottom">
+                            <h6 class="cv-download">Download CV</h6>
+                            <h6 class="cv-soon">SOON ...</h6>
+                            <ion-icon name="newspaper-outline"></ion-icon>
+                        </div>
+                    </a>
+
+                </div>
+            </article>
+
+            <article id="about-article-2">
+                <div class="icon-box-1">
+                    <div class="skills-text">SKILLS</div>
+                    <hr>
+                    <div class="icon-box-out">
+                        <div class="icon-box-in"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADiElEQVR4nO2aO2gUURSGxxcGFEwEQdMIiqTxFcRC0TQWplAIPkAF0wjaBNQiFgrBR6GgIpLKV0CDKKkCKmoUBQujaBFRQQVF1BCDsjub+c/d9ZUrZ3fBsEzOnbmzs7NCDpwm2fv//7czc+fOnXWciaryIqLNAH4Qka7GRiHbJiMIgI6kw5IZpiPIEdmTdFAy9+4gIC1VEFQbusUIopRaXQVBtdRKqVVGkGw2uzDpoGTobDa7wAiitZ6ZdFAytNZ6hhOkACDpsDROc7ZAEEWQD1UM8j4MSL8g1O+6bl2cDeCx5B8GpFcQeufEXADeCv69gYWI6LxweN1YKZy8vyv4nwsjdMwwa9TEBaG1rjFcJ0fDgLRJYkqp+aVj0ul0bTmuD8/zFhtA2gKDKKW2GsRW+sAPV2jm2hIGpMkwBW7wAXlZCRClVFNgkEwm02AA2eUDcr8SIJlMpiEwCJ+rBpCDPiBXKwGSTqdrA4NorScByAkgZ0vHADgTNwSAHGcLDFIM9lkQvB5KLJzvNcH3U2hBInoufDsPY6Fw8r4PBJBnNoK3BJDXsVA4ed9Xgu9NG8EuQfB7LBRO3veb4NtlI3hcOMSjuVxuET+pRWmt9ZSxnlrrqQD+CCAnbED2xz0Lla7ZAMwzjNkXGsTzvB0xg6RLPQEsl8YopbbbgKyLGeSND8h6aQxnsgERV6GFx3pKjW0AP4OCAHjkA7LTALIkNMjIyMgcQ5ADPkF6QoD0+Ixvl8ZwptAgWuvJAH4Jwqd8gnSGAOksHU9EJ4XP/+ZMoUGKwkNCmG4fkGVEdISIbvO9xu8CJ6I7/JTHn/Xxuyz4fbWCKAoPCMJ9QXYtlVLb+Nzn5bdpwUcFyPH8XkQB6ROEB6yF7b64u1GEuwXhobJSWJzKgYsvaOHiGwXwFMAhv/M9aHmet5Qf1AA8YU3B77Sth3E6LDH6yHtORLRRaz19PE1eXyml1vC6iW+KIfTbo4C0BjXyuVne4DdLAOa6rju7uDNzxbD5pgXN1iggzTampfM/dxl0mqOANEYNUK4G0GgNQkT1SQPQv663BtFaT6uGlz4AwFmcKKWUWktElwAMJgAwyN6cwSln8eMpEe0lontx/DoChUmBd28OE9GK0HtYNsUvJPmewfcO3m+KADDMS3qeXl3XrXOSrqBHK5Fv3bZSqdQs/nEOEV0E8IWbiC7w3/h/1sIT5fw/9RdZVHjsEG1exAAAAABJRU5ErkJggg==">
+                        </div>HTML5
+                    </div>
+                    <div class="icon-box-out">
+                        <div class="icon-box-in"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACy0lEQVR4nO2ZT6hMURzHr2KhR/6VsBFZYOHPimxYiF4Wb8XKnxKyIAtKIgtKIptn9ZTCCiXKE6LeRlhgo94GC8WC0cyde77fc/PecHQ0vebd5pyZufd330yv+61TtzvnfH/nc/7c+zt3gqBQoUKFppUAgKTpZgGgJEC+9ADIZwmQNz0A8loC5FEPgDzMDELyRrdBSA5JgFzsAZALEiDHewDkWGYQrfWeboNorXdnBlFKbfMEGQ2ERLLsAdmaOUAURWs8ID8kIIwxMwDUXHGiKFqdOUi1Wl3kCgBg3HYia4xyuTzPt7TCMFwoNVpjriCVSmV+1hha6+WewRqTGKz/AvBdcvMC+JTwX++p+y2QEskPwiBvG/3tZvbUfy8J8kz4kfok4T/gqftUEuS2MMidRn8ABzx1b0mCXM3zLUzyhMfvihgIgFMdrP8zKfzPu/yUUiclQfZ3MCOXUvhf8wzMPkmQnR3MyPVO/Une9PjtkATZKLnZlVJ7E/4PPCAbxEBILpMEAbAr4f/SU3epGIgxZiaAP45gHxvrKqXWtQLRWm9JgLxzQPw1xswSA6kH++UI9rWxXhzHq1qB2Iy6sY39SuKoWxKFqIOMOoJVmmSywwB+N4G294aTiSbJn3mfdyZEcsQxI7Vm2WkYhgsAHCT53BZ7be8FTeTJrkcCaQG451oqxpg5aX2NMX2ejX43D5BBz7o/muZcYtvYth6QwTxAzrV4pNYAvLJ5k1JqscunvuRspvC42T7iZM+zeYAc7uA9MQEFYIk9qrbbeU72OSQO0uLM4OvMuC1p2pIcyANkc8rOZCmbxEHiOF451SBxHK8QB/E9JvMqxpi+IA/VZ+UIgPskI+mOA9AkXwA4HUXR2mAqZIyZrZTaTvKyK+lrs/P2H7Eh+323VCrNDbqtdmerK6OeZbYA9Ns3s/0YVy/2ut/+ltq4UKFChYLpon/rjU2qg9SHkgAAAABJRU5ErkJggg==">
+                        </div>CSS3
+                    </div>
+                    <div class="icon-box-out">
+                        <div class="icon-box-in"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACYklEQVR4nO2au4oUQRSGB1fdyAuyKojiBUxFxAfQQFDMvCSaKCsoRiaCoNEmGomYaCAmRrsueMEHEEw0MfANFm+4M86MXd/fPXgrqd0Rm6J3epalqR6sHyqp7v/M+c7pqqmhp9GIiopalpIk2QzMAkiydRosajZJkolSEHdj6IRVDjQzDAgjAGJKQUInqSFHBFENuqDYEYWvvGJHFL7aih3JKXSlFTviKXSlFTviKXSlFTviKXSlFTviqcqqFd0DPAGOuZ/Y1trVkrYBx4Gny4kdDAT4BZwflAsw6e6rO8jt0mQaC56btQUBfqdpusO7dknSI0lXrLVj/bntkl7UFkTSl/y8Meaw1637ki5L+lbrNQJ89EAOrTR2KJAfrVZrff4acANIRwqkDzPpXzfGbJU0Jak1MiCS5rMs21OUQ7PZXAdck9QdBRA3mm6hL5VLr9fbK+ndKIAsbMXAM+BAUT7dbncTMFd7EA/qpTHmSIHvYjAQ4OcKYk/lfVmW7aocxG2Z/a3znjc/l49rrR33vPNpmp4GHhfE7XretZWCAM+zLNvd/zB3cr3lEpT0FTiXj5um6c6cb8addt18p9PZKOmtF/dV3muM2VJ1R06UBvyXzNmc76RX8XHgAnAXuOoWuJfTqapBPv3tyCBZa1cBb3K+z/6hcYB3jd+xqtbIB2B/CcSdAt97Y8y+Qbk0F78Yi9ZQNbsW8F3SA3f4c8+8q6KruDHmDPC6xPcQOOqOJ9basXa7vUHSQeC6K9JS3kpAQozGf/MylCWeyZF7PZ0kyYSDcdR17AQwPdQfBqKiohp5/QHQ/dYGOB6rtgAAAABJRU5ErkJggg==">
+                        </div>java- Script
+                    </div>
+                    <div class="icon-box-out">
+                        <div class="icon-box-in"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADy0lEQVR4nO1ZTUwVVxQea7SJiaY1MV24sSgYxUgBrZqYGJWarhRQRN10o1jbuNUu2OCq8mtbN113Y00q4Na08qgiiTzcuIBHRBfECA/IlPnOQLDla87La4LImzvvzRuYJu9LTjK5uffO991zzv21rAIKiB4cx/kEQAzAPwD+BvA7yS1W1EFyLYDbSlpEuNjSZb+QXG9FESJyFYAsJb6MkFkA162oAMCXIvLaRHwZmxKR6lUjbtv2DhEZyIH4Uks4jlO6YsRJbgLwG4CFPJBnOqy0rwckPwqT+BoRuQFgPl/E5X0hb0XkZ5If5JU8gK8A/GUiMPB0gDdvtvDs2fM8fuwL7indmzL91rLm5tZUHR9CICLfBCbuuu5hAC8MP+O9e508drSKRZ8W+zKt29nZlWprEPMGwImsidu2vRlAv2mkhoaGWH2q1jfxpVZTfZrDwwmjRxzH6Se50bcAAK9MnT569Jj7Kg/kTP4/Ky/fx56HPX5yZCgbAZ6dxXpi3FmyOzD5orRpX7FYrykv6FuAV0eJxAgrKz7PG/miRZ7QkPT6d2ABOgpBYt5ktbV14QrQ2cZEQvOio+MHxuODTCYnUxYfiLOj/Zan506drGHf477wBOjom6bKK19/y2QymZHAxMQELzdceafNoYOHeefOr36m1GACdAEykfdDQuuoiNLde9na0sapqSk/M1BwAbrCeoWN18gvtenpaY6OjvqunxcBuhXIJEBjPlsyuZgVRIBX/A8OPou+gD2lZRkFZBM+BQFhhJDO+ZH3QH39hYwC2ts6oi+gubk1owBdYXWR8ktkcnKS/U/6V1aAaSHTxcnPQuY4Di9ebOD2opLU4mfawK3oVkJFeHlifHycly5dfqdNSfEuXrv2HcfGxsIVoKbHQNNmTsNJc0I9ptOrmn63tbazonx/xnaflVXypx9vpzwUmgD1gh4Dw9pOn66t8wzDwAL+NwcaGJKxJ4QjZW/vn/k7UgLojNqhHsAfvgWQXCciTabbZr0Sqak5EyjmE4kRE3Hl0ETyQytbiMhWvepb7r5/sWu7urpTt29+iVcdP8Hu7vsm4gsA7s7Ozm6zggJAhYg8NLlZz74tLW08V38hfbVYljL91jI9gfnZNwF44rruISvfcBynSkSemwjkagASruvWWWEinR8NIjKRR/LT+mqTU5znCtu2PxaR7wHMBRjxec2xmZmZ1XsAnJubK9Zky+HB48GKvsyYICIHAfT5IB53XfeIFUWQXKNJCODlMuEyprmjT7FW1EFyA4BGfRxJW6OWrTavAgqw3se/qeJU77ecHwUAAAAASUVORK5CYII=">
+                        </div>C
+                    </div>
+
+                </div>
+
+                <div class="icon-box-2">
+                    <div class="icon-box-out">
+                        <div class="icon-box-in"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC7UlEQVR4nO2aO28TQRSFF4J4PwoeQgIaCgQVHRIFHUJABREUCIkmJJT8BCBpeFRglB9Ag0TDq0SChg6F8CqoEEoAIdkyePacsQmQi668oMhZx7uz46y95EojWV7fmf08d+7MnJkgWLL/xKy1BwE8IPlNi37W74J+MWvtLpJ3AMySlJjyuF6v7w561URkHcnLAOptAP4VAD8A3KxWq5uCXjERWQ7gHMmvnQBiSoXkRRFZkStEGIaHSb52AGgt7621pxcdwBizV2PdA0BreQJgf9cBarXaZo1tAD+7APF3/PyOksV27wAislJjmeT3bgHEAEGTh4is8QGwTGMXwIfFAuB8oGmSI5pUnCBIHgDwPC8Azgd6Ya09lKoXSN5YYELLE2aW5PWkPXEhY2NTAEoAjmp204lSRFaR3AHgCMlrAD5mbON8EpB3jpV/0gZEZCBBrw9Ya89kAHrTEQTAjAPEw3K5vCFIaeoD4K5DezMdK3eo9JZzRonGpM5NadsNfIJoT2SBmAtD8mkuIDom2oVTGIbbSI6RnNSJDUBI8iXJUWPM1tZlv4ZX2iwZeAQZauN/iqRZwFc3WidFZC2AS80JPP2AD3yAaIqNy04KkeSfBfCL5BcXAHoGKbUJp4V6wmsJPIEci/Eby/pSTPHMC0ij0dgT4/eq70BEZH2rX5SZvIQHOzzzBhKXdl3GR+4gjfjQmuy70EL8YB/tR5DbrX46Y5OsucL4Csu0INNxWhTJwUg86I8Jkc2XGW7jP9hBpKiSPNETSxQ2QT63WzQaY7aQvEJyIkrLmtEmVBVRSamnFo1swjzyuIx/lhtIBFPysLEqeQ8tOGx1VT6tVCob00KoD4B73drqvnUZfFEWGkmirOtvwjA8q9uBbooPw46Vz1VTxgEcN8bs03WZiKwmuVMlokgzm8rYxlCiLo+0p14V6K4mgiiMZFo4EbtQxwqFO+gp3NFb4Q5DC3c8XagLA4W7wpHgUs39vrpUs2RBNvsDGamxaltEYH4AAAAASUVORK5CYII=">
+                        </div>C++
+                    </div>
+                    <div class="icon-box-out">
+                        <div class="icon-box-in"><img
+                                src="data:image/png;base64,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">
+                        </div>React Native
+                    </div>
+                    <div class="icon-box-out">
+                        <div class="icon-box-in"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADJ0lEQVR4nO2Yz0tUURTHJ/AfaNmiIH9OamKUlmZWpFarwqg2RaDmD7SkQqmgzJAWpgUV6MrcaPRDQcWWNQVjFmMiurIfLmoR2I/HzDn3vag8cXV6zpRO974fzljvwHczHO58P/eee++7x+Vywgkn/o8gojhFUVYuhYgozjLjjLHDiDgKAD8QkZZCMPdfo4yxQ6bMA0D9UpnGxWHqDJnXNC0JAL7HAMA3VVUTjcz++Wibx3mIc0YA2mMIoF0aABE7o20c59VpZAW6Y8A4BdVlBOB+DJXQPWkARBwQGXzEN0Lxa5MiKinRTXlb86m29hQNDz83AtBvBOClVQChSkxIoZarrbIQPinzRLQCEb/IAiTEJ1NT05UwNTQ0UllZOa1zp4eB9PT0ygB85p6EAfx+v1t08FAAPruL5U29naId23fpufv3FUutgqZpyTLlU2E1AFfPg149152SxmtbBqJSGAAAhu0ACM3dkLlRdiM/EzVfJDOwDEB31x09t7TkuOxGpkAgUBDRvKqqCQDw3g4Afnxuzs6ZzUtJTqWxsTFpAAB4p6pq/IKbFgAuIqIiO+jvp9DNG7d0XWu9TvX1Z+lA8UE9h0N4PE+kzeO8FAC4wD2Hlk2b0QFl7oHdRXupv2+AFEUxA0DB1WizBSA/f2eYsjZt+QOE/+71eq0DYIytQcQTiPjBDMBie4DP+JB3aPZC+5WbnpZB4+MTRsxzjzXc80In0CoAeGM1QKgqyqv0/KrKatlZf809RjyJGGN5dgIMDj7U89enZ8qYn2GM5f71HgiuxFO7ADyPPWGnlt/vFwXwCJkPApTYBdDc3KLnZ2flyKxAqTAAv9DsAODlk5aaoeefOV0nDLDgBRYpEPGTFZ/TjZcuU031SSos2BN2lPL6n5x8JQrwUcp8EMAnCyCq3Jxts8cqipfPC2kA/oyz8knJL7SjR45RR8dtmp6eFjaPcwB9y/1Rf1cagLcyom0czbRV/oXGVtuybi1CDLTW0UyLnX/tAcDXGDCvMcZWu4wE707wj6gomp9BxHKXmQg+8h8ZeW6akML/MxAIFJoy74QTTjjhsjt+ArED9pTMlebrAAAAAElFTkSuQmCC">
+                        </div>Bootstap5
+                    </div>
+                    <div class="icon-box-out">
+                        <div class="icon-box-in"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADlklEQVR4nO1Yz2tdRRR+MVY3Wiv4q2i1i6pYi4gGLLQLae06K6GkELIIxRiz0caFNQuNIZbgpulf0KILi1StiGKza7tIm70ummhoUUjyXt493zfvYUtGDpnAzWTuffe+JG46H8zmztzzne/cMzPn3EolIiIiIiIiIiIiYrNoNBp7AfQBGAEwSXKc5CDJg9bazsoWQW2RfMvZHlcux9lnjHmhXaMPiMgJkjMkbc74B8BXJJ9tVwCA3SQnSP7dgmtGRHqstR2FDNfr9ZcLCFg3ADQBnLbWPlgiWJ0APgZgynCRvNlsNl/KNS4ix0jWShpOC5pOkuSVViLUEQDX2+UhWRWRd4LGSb4JgAHn/iX5G8lRkh9o5AFcxOriEEldRI5kiTDGHFZHMgJhAHwH4FOSQ47zivPBX0sAb6wzvry8/DiA2wHj50k+F3KoVqvtEpGPdJ+EUs0Y824gWN0ZqVQF8EmSJE9kiN9D8kKAZ179SBNMeAtWSL5fKQAlB/Bt6EumP7+IvK0CAyJ+LnpYkBx0vqXf/3KN4GkADW9ytIhhL2ofBkiWReTVJEn2Z6TTZwFnbXoE5sf8dEyS5EmdOOlN3LLWPlRWiAtKD4B7nr0/AcwFvvh7IRtsIcRa+zCAWc9ev774k/fwVDsiUo6sC0zGph7Oed/mCVHose3Z+1Ef/pF+KCIHsoxmjYAzX+SIONvKebbgEZHXvLnfVYikH1prH9msEK0M3JHti5gOpW1ZnoWFhUc9u7JBiC7aAiE7AFzbLiGLi4s7vbn6tqQWgHM5qTW5LalF8vJWbnZ/I/5Pm/2H0PE72+7xS3LAv0v06N2G43fOs9evn+mpwIU4VkaAltYZJ1VVL8OcC/FzvyxnCyGuH9p4IbrJM4GIDRYR4eqgXwPp09SypECJ8ktWPedDC8lA9TDuF43zAZKvjTHPb7C46ph+yREtQwIitDDsLlE01rTiTdYi60F9APBNgOevarX62LrFWhJnlPF3SU651Bly7ef3gXRcG0vGmEMhhwqU8Q0Al1yAhhznlPPBX6t4PUgiIkezSIoMAFcbjca+Sgs0m80XQ/cMi4+lvJ4n3b3dKCmA2pvojV4p1+oOl211AUxrIIqSdBhjjqugwOZKG9VmbFxbgUqbAPCM9hQA7uTwrKgv6lPhnw8ZG61XN6P7HaT9wADJrjJfoODvoC5t6JTD/Q5Szl49GbeKJyIiIiIiIiIi4j7Gf8ZSqaUw5/y+AAAAAElFTkSuQmCC">
+                        </div>SQL
+                    </div>
+                    <div class="icon-box-out">
+                        <div class="icon-box-in"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAACGElEQVR4nO2Yv2tUQRDHn9rYaBOxEBFsNfFHbyloowE1IhEbIf+CiY1Wgo1WWkmwsBCvE0SJgXQS0C5dIggiWuRO5N58v3sIwZHVWVwOE1/uvX3vwBsYOGZvdj7MzL79kWUmnU5nL4CHJL+Q1Ao0F5HprCoh+bIiMA0KYAPAtdJwInK0ajj+AdwQkatls3chEeANAB9LQzrnplIAOuemnHOHAHwoVe6UgNnv+ctBJgS8EmL0er3DA5c7FSDJx3GcgSETAiqAdwBakS6HFU7yXOOA3Br+2bADtkaAHGUwG/WgjhYJ/+PPzKe+XeaXkpzvdrtjjQNya724bcDCJSkhgSUc1UoDkjxActLPAeB4PAbghIicVtXdwZbn+T4RmagFkOQkABeNf47GHkX2NRHZb/Z5f+OrBRDAe5JtANf9HCJyzOwnzWeJ5F37fcfG/CLQujL4leRKu93e02e/ZEEuq+qO2LdWQAD3zf6d5KK/e/wtSGOAqroTwAyA53ZCfj1UgLEAeBOan+R5+7/vzVPm/6SJEt+0gK/iDPpPj63ujqn3vRUDbrZrVA34NurBhdCDIYsAVkmu25141nzmAPzoe2SaSF7iqqQs4LI9ZyRTAPcGBqxTAZxpHBCbVATAWVXdNQyArW015tACMtEDJv8N+LQQYJ7nRxoCvF0I0LL4ombAbyQPFgb0RyYAD/yhM3HWxO86IjJeBOwnDU/mSB1h8wQAAAAASUVORK5CYII=">
+                        </div>Arduino
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="project" >
+            <div class="d-flex flex-row">
+                <h1>Project </h1>
+                <span id="span-2"><ion-icon name="code-download"></ion-icon></span>
+            </div>
+            <br>
+            <hr>
+
+            <div class="project-box">
+                <a href="https://likeubluu.github.io/Recipe-page-with-Responsive/" target="_blank">
+                    <article id="card" class="card-1">
+                        <img src="images/recipe-page.webp" alt="recipe-page">
+                        <div class="project-name">
+                            <h2>Recipe page with Responsive</h2>
+                            <div class="d-flex justify-content-between">
+                                <p>HTML CSS</p>
+                                <ion-icon name="arrow-forward-outline" class="element"></ion-icon>
+                            </div>
+                        </div>
+                </a>
+                </article>
+
+
+                <a href="https://likeubluu.github.io/Fylo-landing-page/" target="_blank">
+                    <article id="card" class="card-2">
+                        <img src="images/fylo-landing-page.webp" alt="fylo-landing-page">
+                        <div class="project-name">
+                            <h2>Fylo-landing-page</h2>
+                            <div class="d-flex justify-content-between">
+                                <p>HTML CSS</p>
+                                <ion-icon name="arrow-forward-outline" class="element"></ion-icon>
+                            </div>
+                        </div>
+                </a>
+                </article>
+
+                <a href="https://likeubluu.github.io/Testimonials-grid-section/" target="_blank">
+                    <article id="card" class="card-3">
+                        <div id="img">
+                            <img src="images/testimonials.webp" alt="testimonials">
+                        </div>
+                        <div class="project-name">
+                            <h2>Testimonials-grid-section</h2>
+                            <div class="d-flex justify-content-between">
+                                <p>HTML CSS (Grid)</p>
+                                <ion-icon name="arrow-forward-outline" class="element"></ion-icon>
+                            </div>
+                        </div>
+                </a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="d-flex flex-row">
+                <h1>Contact</h1>
+                <span id="span-2"><ion-icon name="code-working"></ion-icon></span>
+            </div>
+
+            <div id="contact-box">
+                <div class="contact-box1">
+                    <a href="https://github.com/likeubluu" target="_blank">
+                        <div class="contact-box-out">
+                            <ion-icon class="contact-icon" name="logo-github"></ion-icon><span> Github</span>
+                        </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/chadaporn-silasawun-6176392b1/" target="_blank">
+                        <div class="contact-box-out">
+                            <ion-icon class="contact-icon" name="logo-linkedin"></ion-icon><span> Linkedin</span>
+                        </div>
+                    </a>
+
+                    <a href="https://www.instagram.com/arrcxp/" target="_blank">
+                        <div class="contact-box-out">
+                            <ion-icon class="contact-icon" name="logo-instagram"></ion-icon><span> Instagram</span>
+                        </div>
+                    </a>
+
+                    <div class="contact-box-out">
+                        <ion-icon class="contact-icon" name="logo-google"></ion-icon><span>
+                            yourtongz.18@gmail.com</span>
+                    </div>
+
+                    <div class="contact-box-out">
+                        <ion-icon class="contact-icon" name="call"></ion-icon><span> +66939028208</span>
+                    </div>
+                </div>
+
+                <div class="contact-box2">
+                    <img src="images/haze-developing-a-mobile-application-and-software-1.png" alt="coding">
+                </div>
+            </div>
+        </section>
+
+
+        <nav class="navbar navbar-expand">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" id="nav-link" href="#home"> Home</a></li>
+                <li class="nav-item"><a class="nav-link" id="nav-link" href="#home"> <ion-icon name="home-outline"></ion-icon></a></li>
+                <li class="nav-item"><a class="nav-link" id="nav-link" href="#about"> About</a></li>
+                <li class="nav-item"><a class="nav-link" id="nav-link" href="#about"> <ion-icon name="help-circle-outline"></ion-icon></a></li>
+                <li class="nav-item"><a class="nav-link" id="nav-link" href="#project">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" id="nav-link" href="#project"><ion-icon name="code-download-outline"></ion-icon></a></li>
+                <li class="nav-item"><a class="nav-link" id="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" id="nav-link" href="#contact"><ion-icon name="call-outline"></ion-icon></a></li>
+            </ul>
+        </nav>
+
+        <!-- <a href="https://icons8.com/icon/23028/html">HTML</a> icon by <a href="https://icons8.com">Icons8</a>
+
+        <a href="https://icons8.com/icon/38272/css">CSS</a> icon by <a href="https://icons8.com">Icons8</a>
+
+        <a href="https://icons8.com/icon/39854/javascript">JavaScript</a> icon by <a
+            href="https://icons8.com">Icons8</a>
+
+        <a href="https://icons8.com/icon/shQTXiDQiQVR/c-programming">C Programming</a> icon by <a
+            href="https://icons8.com">Icons8</a>
+
+        <a href="https://icons8.com/icon/55199/c">C</a> icon by <a href="https://icons8.com">Icons8</a>
+
+        <a href="https://icons8.com/icon/viH7JJy51bHj/react">react</a> icon by <a href="https://icons8.com">Icons8</a>
+
+        <a href="https://icons8.com/icon/EzPCiQUqWWEa/bootstrap">Bootstrap</a> icon by <a
+            href="https://icons8.com">Icons8</a>
+
+        <a href="https://icons8.com/icon/lvbZNSZTbrbd/sql">SQL</a> icon by <a href="https://icons8.com">Icons8</a>
+
+        <a href="https://icons8.com/icon/11670/arduino">Arduino</a> icon by <a href="https://icons8.com">Icons8</a>
+
+        Illustration by <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a> from <a
+            href="https://icons8.com/illustrations">Ouch!</a> 
+            
+        <a target="_blank" href="https://icons8.com/icon/38248/code-file">Code</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    
+        -->
+</body>
+</html>
